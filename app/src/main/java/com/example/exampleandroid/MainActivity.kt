@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         var editText1 = ""
         var editText2 = ""
 
+        //Сложение
         binding.btnSum.setOnClickListener {
 
             editText1 = binding.editTextNumber1.text.toString()
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //Вычитание
         binding.btnMinus.setOnClickListener {
 
             editText1 = binding.editTextNumber1.text.toString()
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //Умножение
         binding.btnMulti.setOnClickListener {
 
             editText1 = binding.editTextNumber1.text.toString()
@@ -58,6 +61,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //Деление
         binding.btnDiv.setOnClickListener {
 
             editText1 = binding.editTextNumber1.text.toString()
