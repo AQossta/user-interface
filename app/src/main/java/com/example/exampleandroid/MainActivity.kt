@@ -16,8 +16,69 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnChangeText.setOnClickListener {
-            binding.tvTextSalem.text = "Текст изменился"
+        var editText1 = ""
+        var editText2 = ""
+
+        binding.btnSum.setOnClickListener {
+
+            editText1 = binding.editTextNumber1.text.toString()
+            editText2 = binding.editTextNumber2.text.toString()
+
+            if (editText1 == "" || editText2 == ""){
+                binding.tvResult.text = "Not found number at editText"
+            }else{
+                val result = editText1.toInt() + editText2.toInt()
+                binding.tvResult.text = result.toString()
+            }
+        }
+
+        binding.btnMinus.setOnClickListener {
+
+            editText1 = binding.editTextNumber1.text.toString()
+            editText2 = binding.editTextNumber2.text.toString()
+
+            if (editText1=="" || editText2 == ""){
+                binding.tvResult.text = "Not found number at editText"
+            }else{
+                val result = editText1.toInt() - editText2.toInt()
+                binding.tvResult.text = result.toString()
+            }
+        }
+
+        binding.btnMulti.setOnClickListener {
+
+            editText1 = binding.editTextNumber1.text.toString()
+            editText2 = binding.editTextNumber2.text.toString()
+
+            if (editText1=="" || editText2 == ""){
+                binding.tvResult.text = "Not found number at editText"
+            }else{
+                val result = editText1.toInt() * editText2.toInt()
+                binding.tvResult.text = result.toString()
+            }
+        }
+
+        binding.btnDiv.setOnClickListener {
+
+            editText1 = binding.editTextNumber1.text.toString()
+            editText2 = binding.editTextNumber2.text.toString()
+
+            if (editText1=="" || editText2 == ""){
+                binding.tvResult.text = "Not found number at editText"
+            }else{
+                val result = editText1.toInt() / editText2.toInt()
+                binding.tvResult.text = result.toString()
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
